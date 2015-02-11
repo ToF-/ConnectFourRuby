@@ -48,5 +48,8 @@ o....*o
 *....o*
 """)
         expect(grid.cell(0,0)).to be :red
+        expect(grid.cell(0,5)).to be :empty
+        expect(grid.cell(6,5)).to be :yellow
+        expect(grid.cell(6,0)).to be :red
     end
 end
